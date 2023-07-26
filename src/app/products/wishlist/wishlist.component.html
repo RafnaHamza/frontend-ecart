@@ -1,0 +1,58 @@
+                      <!-- Empty whishlist -->
+
+<div class="container" *ngIf="allwishlist.length==0">
+    <div class="ro">
+        <div class="col text-center mt-4">
+            <!--Empty wishlist Image  -->
+            <img class="m-5" src="https://d3g01po1nkka75.cloudfront.net/allthingsgood-frontend-assets/wishlist-info-drawer-animation.gif" alt="">
+            <h3 class="text-danger"> Your Wishlist is Empty...🤷🏻‍♀️</h3>
+            <button class="btn btn-info m-5" routerLink="">Shop More</button>
+        </div>
+    </div>
+</div>
+
+                      <!-- Wishlist with content -->
+                    
+<!-- Section-->
+<section class="">
+    <div class="container mt-3">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col m-5" *ngFor="let wish of allwishlist">
+                <div class="card shadow h-80">
+                    <!-- Product image-->
+                    <img class="card-img-top p-3" height="200px" width="100px" [src]="wish.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{wish.title}}</h5>
+                            <!-- Product price-->
+                            ${{wish.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a (click)="deletewishlist(wish.id)" class="btn btn-outline-dark mt-auto m-4">
+                                <i class="fa-solid fa-heart-circle-minus fa-fade text-danger"></i>
+                            </a>
+                            <a (click)="addtocart(wish)" class="btn btn-outline-dark mt-auto m-4">
+                                <i class="fa-solid fa-cart-plus fa-fade text-warning"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+       </div>
+       <div class="text-center">
+             <button class="text-center"><a href="" style="text-decoration: none;">View All Products</a> </button>
+       </div>
+       
+    </div>
+</section>
+
+                    
+
+

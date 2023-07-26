@@ -1,0 +1,32 @@
+<div class="banner">
+    
+</div> 
+
+ <!-- Section-->
+ <section class="">
+    <div class="container mt-3">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" *ngFor="let product of allProducts | filter:searchTerm:'title'">
+                <div class="card shadow h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top p-3" height="250px" width="150px" [src]='product.image' alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{product.title}}</h5>
+                            <!-- Product price-->
+                            ${{product.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">                            
+                            <a class="btn btn-outline-dark mt-auto" routerLink="view-product/{{product.id}}">View options</a>
+                            <a><i (click)="addtowishlist()" class="fa-regular fa-heart text-danger ms-3"></i></a>
+                            <a><i (click)="addtocart(product)" class="fa-sharp fa-solid fa-cart-plus text-success ms-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+

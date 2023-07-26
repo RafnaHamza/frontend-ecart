@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+  @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Abril+Fatface&family=Alkatra&family=Black+Ops+One&family=Bungee+Inline&family=Capriola&family=Castoro+Titling&family=Climate+Crisis&family=Delicious+Handrawn&family=Delius+Swash+Caps&family=Golos+Text&family=IM+Fell+English+SC&family=Julee&family=Lily+Script+One&family=Permanent+Marker&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Reggae+One&family=Roboto:ital,wght@0,100;0,300;1,100&family=Rubik+Pixels&family=Source+Serif+4:wght@200&family=Stylish&display=swap');
+h1{
+    font-family: 'Alkatra', cursive;
+}
+
+h2{
+    font-family: 'Capriola', sans-serif;
+}
+
+h3{
+    font-family: 'Castoro Titling', cursive;
+}
+
+p{
+    font-family: 'Capriola', sans-serif;
+}

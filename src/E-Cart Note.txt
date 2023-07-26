@@ -1,0 +1,65 @@
+
+
+
+
+                                E-COMMERCE FRONTEND CREATION
+                        --------------------------------------------
+
+                        1. Create a folder E_CART, inside it create frontEbd and BackEnd
+                        2. Project Creation : ng new e-cart-FRONTEND
+                        3. Run the frontend : ng s -o
+                        4. Clear The code from app.component.html in src-app folder
+                        5. Install Third Party libraries
+                            1. Copy and Paste Bootstrap link in index.html file
+                            2. Copy and Paste fontawsome cdnjs link in index.html file
+                            3. Copy and Paste google fonts in style.css
+                        6. Create Components
+                        7. Lazy Loading
+                                Lazy Loading helps keep initial bundle sizes smaller,
+                                which in turn helps decrease load time.
+                            ->Module Generation - ng g m products --route products --module app.module
+                           
+                           Component Create Inside the products module
+
+                          Code to generate component inside the lazy module (lazy module name  -- products)
+                            -> ng g c products/allProducts
+                            -> ng g c products/viewProduct
+                            -> ng g c products/cart
+                            -> ng g c products/wishlist
+
+                            Not Included in the products module
+                                -> ng g c header
+                                -> ng g c footer
+                                -> ng g c pageNotFound
+
+                        8. Setup Paths
+                            http://localhost:5000/ => http://localhost:5000/products/allProducts
+
+                            ->products.routing
+                            const routes: Routes = [{ path:'',component:AllProductsComponent}];
+
+
+                        9.  Backend Creation
+
+                        10. API Integration
+
+                            -> Create api function in api.services
+                            -> Call that function in corresponding component
+                            -> Display the details of the product 
+                            -> Wishlist Integration
+                        
+                         Create pipes/filter fro searching
+
+                            ng g p products/pipes/filter
+                        
+                        11. Behaviour Subjects --(important)
+
+                        -> It is used to share stream of data from one component to another
+                        -> Its under the rxjs library
+                        -> Its a asynchronous function
+                        -> next() method is used to attach the data 
+
+
+
+
+                    

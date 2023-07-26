@@ -1,0 +1,21 @@
+/* .banner{
+    background-image: url('https://img.pikbest.com/png-images/20191028/little-girl-pushing-a-shopping-cart-to-buy-things-gif_2515300.png!bw700');
+} */
+
+.banner{
+    background-image: url('https://img.freepik.com/premium-photo/shopping-banner-with-shopping-bags-gift-boxes-3d-render-illustration-perfect-shopping-banner_7209-503.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    background-position: center;
+}
+
+.card img{
+    transition: 3s;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
