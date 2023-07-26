@@ -17,7 +17,7 @@ export class ApiService {
     this.cartCount()
    }
 
-  BASE_URL = 'http://localhost:5000'
+  BASE_URL = 'https://backend-for-ecart-ckdy.onrender.com'
 
   // get all products from mongodb
   getAllProducts(){
